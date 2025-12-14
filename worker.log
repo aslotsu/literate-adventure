@@ -1,0 +1,90 @@
+2025/12/10 11:28:31 🚀 Exobook Notification Worker Starting...
+2025/12/10 11:28:31 ✅ Configuration loaded (env=development, region=ca-central-1)
+2025/12/10 11:28:31 📡 Connecting to NATS at nats://connect.ngs.global...
+2025/12/10 11:28:32 ✅ Connected to NATS
+2025/12/10 11:28:32 💾 Initializing DynamoDB notification service (table=exobook-notifs)...
+2025/12/10 11:28:32 ✅ Notification service initialized
+2025/12/10 11:28:32 👂 Starting notification worker...
+2025/12/10 11:28:32 ✅ Subscribed to notifications.> (all notification events)
+2025/12/10 11:28:32 🎉 Notification worker is running!
+2025/12/10 11:28:32 📬 Listening for events on: notifications.>
+2025/12/10 11:28:32    - notifications.post.like
+2025/12/10 11:28:32    - notifications.post.unlike
+2025/12/10 11:28:32    - notifications.comment.like
+2025/12/10 11:28:32    - notifications.reply.post
+2025/12/10 11:28:32    - notifications.reply.comment
+2025/12/10 11:28:32 
+2025/12/10 11:28:32 Press Ctrl+C to stop...
+2025/12/10 11:28:39 📨 Received event on subject: notifications.post.like
+2025/12/10 11:28:40 ✅ Created notification: owner=test-user-123, action=1, resource=test-post-789
+2025/12/10 11:28:40 ✅ Processed notification in 980.909809ms (owner=test-user-123, action=1, resource=test-post-789)
+2025/12/10 12:17:33 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:63701->34.159.123.68:4222: read: operation timed out
+2025/12/10 12:17:33 🔄 Reconnected to NATS at nats://34.159.123.68:4222
+2025/12/10 12:59:49 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:56760->34.159.123.68:4222: read: operation timed out
+2025/12/10 12:59:50 🔄 Reconnected to NATS at nats://34.159.142.0:4222
+2025/12/10 13:10:41 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:60110->34.159.142.0:4222: read: operation timed out
+2025/12/10 13:10:41 🔄 Reconnected to NATS at nats://34.89.235.191:4222
+2025/12/10 13:27:56 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:60630->34.89.235.191:4222: read: operation timed out
+2025/12/10 13:27:56 🔄 Reconnected to NATS at nats://34.107.15.96:4222
+2025/12/10 14:18:08 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:61746->34.107.15.96:4222: read: operation timed out
+2025/12/10 14:18:09 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/10 14:24:55 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:64426->34.159.145.96:4222: read: operation timed out
+read tcp 192.168.137.140:49241->34.159.145.96:4222: i/o timeout on connection [399687]
+read tcp 192.168.137.140:49595->34.89.235.191:4222: i/o timeout on connection [545214]
+2025/12/10 14:51:37 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/10 17:39:05 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:52179->34.159.145.96:4222: read: can't assign requested address
+2025/12/10 17:39:40 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/10 17:42:56 ⚠️  Disconnected from NATS: read tcp 192.168.10.147:58471->34.159.145.96:4222: read: can't assign requested address
+2025/12/10 17:45:40 🔄 Reconnected to NATS at nats://34.89.235.191:4222
+2025/12/10 17:57:03 📨 Received event on subject: notifications.post.like
+2025/12/10 17:57:04 Notification already exists for action_key: test-user-456#test-post-789#1#0001-01-01T00:00:00Z, skipping
+2025/12/10 17:57:04 ✅ Processed notification in 1.120505596s (owner=test-user-123, action=1, resource=test-post-789)
+2025/12/10 18:00:54 📨 Received event on subject: notifications.post.like
+2025/12/10 18:00:55 Notification already exists for action_key: test-user-456#test-post-789#1#0001-01-01T00:00:00Z, skipping
+2025/12/10 18:00:55 ✅ Processed notification in 1.023948375s (owner=test-user-123, action=1, resource=test-post-789)
+2025/12/10 18:24:30 📨 Received event on subject: notifications.post.like
+2025/12/10 18:24:31 Notification already exists for action_key: user-trigger-999#test-post-nats-123#1#0001-01-01T00:00:00Z, skipping
+2025/12/10 18:24:31 ✅ Processed notification in 836.299389ms (owner=user-owner-888, action=1, resource=test-post-nats-123)
+2025/12/10 19:50:30 ⚠️  Disconnected from NATS: read tcp 192.168.88.60:64079->34.89.235.191:4222: read: can't assign requested address
+2025/12/10 19:50:40 🔄 Reconnected to NATS at nats://34.107.15.96:4222
+2025/12/10 20:53:01 📨 Received event on subject: notifications.post.like
+2025/12/10 20:53:02 Notification already exists for action_key: trigger-user-final#final-test-post-1765399978#1#0001-01-01T00:00:00Z, skipping
+2025/12/10 20:53:02 ✅ Processed notification in 735.396912ms (owner=owner-user-final, action=1, resource=final-test-post-1765399978)
+2025/12/10 20:58:36 📨 Received event on subject: notifications.post.like
+2025/12/10 20:58:36 Notification already exists for action_key: test-trigger-user#e2e-test-1765400313#1#0001-01-01T00:00:00Z, skipping
+2025/12/10 20:58:36 ✅ Processed notification in 749.637979ms (owner=test-owner-user, action=1, resource=e2e-test-1765400313)
+2025/12/11 06:35:29 ⚠️  Disconnected from NATS: read tcp 192.168.0.144:62256->34.107.15.96:4222: read: operation timed out
+2025/12/11 06:35:30 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/11 11:31:13 ⚠️  Disconnected from NATS: read tcp 192.168.0.144:61124->34.159.145.96:4222: read: can't assign requested address
+2025/12/11 13:00:35 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/11 15:24:32 ⚠️  Disconnected from NATS: read tcp 192.168.0.173:49483->34.159.145.96:4222: read: can't assign requested address
+read tcp 192.168.137.140:54096->34.159.145.96:4222: i/o timeout on connection [470140]
+2025/12/11 16:18:43 🔄 Reconnected to NATS at nats://connect.ngs.global:4222
+2025/12/11 20:48:05 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:54171->34.89.235.191:4222: read: can't assign requested address
+2025/12/11 20:48:06 🔄 Reconnected to NATS at nats://34.159.123.68:4222
+2025/12/11 21:03:50 ⚠️  Disconnected from NATS: read tcp 192.168.0.144:58600->34.159.123.68:4222: read: can't assign requested address
+2025/12/11 21:06:09 🔄 Reconnected to NATS at nats://34.107.15.96:4222
+2025/12/12 02:38:58 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:62421->34.107.15.96:4222: read: connection reset by peer
+2025/12/12 02:38:59 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/12 03:09:17 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:49960->34.159.145.96:4222: read: connection reset by peer
+2025/12/12 03:09:18 🔄 Reconnected to NATS at nats://connect.ngs.global:4222
+2025/12/12 04:46:56 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:50042->34.89.235.191:4222: read: connection reset by peer
+2025/12/12 04:46:58 🔄 Reconnected to NATS at nats://34.159.123.68:4222
+2025/12/12 04:54:46 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:50138->34.159.123.68:4222: read: connection reset by peer
+2025/12/12 04:54:46 🔄 Reconnected to NATS at nats://34.159.142.0:4222
+2025/12/12 05:23:18 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:50234->34.159.142.0:4222: read: connection reset by peer
+2025/12/12 05:23:18 🔄 Reconnected to NATS at nats://34.89.235.191:4222
+2025/12/12 05:39:04 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:51666->34.89.235.191:4222: read: connection reset by peer
+2025/12/12 05:39:04 🔄 Reconnected to NATS at nats://34.107.15.96:4222
+2025/12/12 06:16:33 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:51801->34.107.15.96:4222: read: connection reset by peer
+2025/12/12 06:16:33 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/12 06:39:18 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:52562->34.159.145.96:4222: read: connection reset by peer
+2025/12/12 06:39:19 🔄 Reconnected to NATS at nats://connect.ngs.global:4222
+2025/12/12 06:42:53 ⚠️  Disconnected from NATS: read tcp 192.168.100.202:53494->34.159.145.96:4222: read: can't assign requested address
+2025/12/12 06:49:02 🔄 Reconnected to NATS at nats://34.159.145.96:4222
+2025/12/12 07:23:42 ⚠️  Disconnected from NATS: read tcp 192.168.0.144:54355->34.159.145.96:4222: read: operation timed out
+2025/12/12 07:23:43 🔄 Reconnected to NATS at nats://connect.ngs.global:4222
+2025/12/12 09:09:20 ⚠️  Disconnected from NATS: read tcp 192.168.0.144:56159->34.159.123.68:4222: read: can't assign requested address
+2025/12/12 09:09:23 🔄 Reconnected to NATS at nats://connect.ngs.global:4222
+2025/12/12 09:29:36 ⚠️  Disconnected from NATS: read tcp 192.168.137.140:57786->34.159.142.0:4222: read: can't assign requested address
+2025/12/12 09:29:37 🔄 Reconnected to NATS at nats://34.159.123.68:4222
